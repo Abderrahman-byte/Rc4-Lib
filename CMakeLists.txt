@@ -2,10 +2,10 @@ project (rc4-lib)
 
 cmake_minimum_required (VERSION 3.10)
 
-set(CMAKE_CXX_STANDARD 11)
+set (CMAKE_CXX_STANDARD 11)
 
-add_subdirectory(./src)
+add_subdirectory (third-party/googletest)
 
-# add_executable (rc4 ./main.cpp)
+add_subdirectory (./src)
 
-# target_link_libraries (rc4 rc4-lib::rc4)
+add_subdirectory (./tests)
