@@ -1,3 +1,3 @@
 #!/bin/bash
 
-cmake -S . -B ./build && cd build && ./tests/encryption_test ; cd ..
+cmake -S . -B ./build && cd build && make && ./tests/encryption_test ; cd ..
