@@ -4,7 +4,6 @@
 #include <rc4lib/rc4.hpp>
 
 TEST(Rc4Lib, ValidKeyEncryption) {
-	int cipherLen;
 	unsigned char plainText[] = "hi there";
 	unsigned char keyText[] = "123456";
 	unsigned char *cipherText = rc4lib::cipher(plainText, 8, keyText, 6);
@@ -14,7 +13,6 @@ TEST(Rc4Lib, ValidKeyEncryption) {
 }
 
 TEST(Rc4Lib, InvalidKeyEncryption) {
-	int cipherLen;
 	unsigned char plainText[] = "hi there";
 	unsigned char keyText[] = "123456";
 	unsigned char fakeKey[] = "123455";
